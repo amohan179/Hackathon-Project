@@ -1,22 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Button from "@mui/material/Button"
+import { useState } from 'react';
+import Button from "@mui/material/Button";
+import MapView from './MapView'; 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
       <div>
-
-<Button variant="contained">Testing</Button>
-
-
+        <Button variant="contained">Testing</Button>
+        <MapView />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
